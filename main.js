@@ -147,19 +147,29 @@ document.getElementById("dice-image").addEventListener("click",(e) => {
 let count = 0;
 let sum=0;
 document.getElementById("dice-image").addEventListener("click",myfunction);
-
+let supercount=0;
 function myfunction(){
     if(count == 3 && sum > 10){
-        prompt("Excellent, you can generate coupon now.");
+        alert("Excellent, you can generate coupon now.");
         coupon.style.pointerEvents = "auto";   
+
+        
     }else if(count == 3 && sum < 10){
-        prompt("Try again after scoring greater than 10.");
+        alert("Try again after scoring greater than 10.");
         dicegame.style.pointerEvents="auto"; 
-        clear();
+        //document.getElementById("dice-images").addEventListener("click",generateagain);
+        if(supercount<2){
+            supercount++;
+            count = 0;
+            sum=0;
+        }else if(supercount == 2){
+            alert("bad luck");
+        }
+            //clear();
     }
     else
     {
-        ++count;
+        count++;
         let  arr= ["1", "2", "3", "4", "5", "6"];
         let randomIndex = Math.floor(Math.random()*6);
         console.log(randomIndex);
@@ -184,7 +194,31 @@ function clear(){
     document.getElementById("dice-score-para").innerHTML="";
     document.getElementById("dice-count-para").innerHTML="";
     document.getElementById("dice-total-para").innerHTML="";
+
 }
 
+
+function generateagain(){
+    let count = count+1;
+    let  arr= ["1", "2", "3", "4", "5", "6"];
+        let randomIndex = Math.floor(Math.random()*6);
+        console.log(randomIndex);
+        let randomDice = arr[randomIndex];
+        sum = parseInt(sum)+parseInt(randomDice);
+    
+        countpara.innerHTML=count;
+        scorepara.innerHTML=randomDice;
+        totalpara.innerHTML=sum;
+        generateagain();
+        
+        if(count == 3 && sum >10){
+            prompt("Excellent, you can generate coupon now.");
+            coupon.style.pointerEvents = "auto";   
+
+        }else if(count==3 && sum<10){
+            alert("bad luck");
+            return;
+}
+}
 
 
