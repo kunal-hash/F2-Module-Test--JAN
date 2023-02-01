@@ -105,6 +105,28 @@ const submit = () => {
     form.reset();
 }
 
+document.getElementById('button').onclick = function() {
+    var name = document.getElementById("name").disabled;
+    var username = document.getElementById("username").disabled;
+    var email = document.getElementById("email").disabled
+    if (name) {
+        document.getElementById("name").disabled = false;   
+    }
+    else{
+        document.getElementById("name").disabled = true;
+    }
+    if(username){
+        document.getElementById("username").disabled = false;
+    }else{
+        document.getElementById("username").disabled = true;
+    }
+    if(email){
+        document.getElementById("email").disabled = false; 
+    }else{
+        document.getElementById("email").disabled = true; 
+    }
+}
+
 /* let count=0;
 let sum=0;
 document.getElementById("dice-image").addEventListener("click",(e) => {
