@@ -50,7 +50,7 @@
                         <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block mb-4" id="button">submit</button>
+                        <button type="submit" class="btn btn-primary btn-block mb-4" id="button">submit</button><span id="goto"></span>
                     </div>
                 </form>
             </div>
@@ -64,17 +64,18 @@
                 </div>
             </div>
             <div class="dicegame hide section-2-items" id="dicegame-div">
-                <h1>Click dice image to roll the dice</h1>
+                <h2>!Click dice image to roll the dice - you have three attempts for getting total greater than 10.</h2>
                 <div class="clicktoplay">
                     <div class="abc border" id="my-dice" ><a href="#"><img src="diceimage.png" alt="dice-image" id="dice-image"></a>
+                        <p id="hit">Hit the Dice</p>
                     </div>
                     <div class="score border">
                         <h1>Score</h1>
-                        <p><span id="dice-score-para">0</span></p>
+                        <p class="digits"><span id="dice-score-para">0</span></p>
                         <h1>Count</h1>
-                        <p><span id="dice-count-para">0</span></p>
+                        <p class="digits"><span id="dice-count-para">0</span></p>
                         <h1>Total</h1>
-                        <p><span id="dice-total-para">0</span></p>
+                        <p class="digits"><span id="dice-total-para">0</span></p>
                     </div>
                 </div>
             </div>

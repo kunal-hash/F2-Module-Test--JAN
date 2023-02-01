@@ -1,7 +1,7 @@
 
 .main-container{
     height: 90%;
-    /*background-color: #82CD47;*/
+    background-color:#F0FF42;
 }
 .container-fluid{
     display: grid;
@@ -25,6 +25,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 .section-1 img{
     width: 100%;
@@ -44,6 +45,10 @@
     height: auto;
     width: auto;
 }
+#button{
+    width: 10%;
+    height: 30px;
+}
 .section-2{
     /* background-color: #82CD47; */
     height: 82.5vh;
@@ -56,14 +61,28 @@
     width: 60%;
     padding: 10px;
     margin:auto;
-    border: 1px solid red;
     height: auto;
 
 }
+.form-label{
+    font-size: 20px;
+}
 h1{
     text-align: center;
-    background-color:#379237
+    background-color:#379237;
+    padding: 15px;
 }
+h2{
+    text-align: center;
+    background-color:#379237;
+    padding: 15px;
+
+}
+ .digits{
+    padding: 10px;
+    font-weight: 300;
+    font-size: 50px;
+} 
 .form-group{
     width: auto;
     padding: 30px;
@@ -93,7 +112,12 @@ ul{
     height: 300px;
     width: 300px;
     margin: auto;
-    padding: 30px;
+    padding: 50px;
+  }
+  #hit{
+    text-align: center;
+    font-weight: 300px;
+    font-size: 25px;
   }
   .clicktoplay{
     display: flex;

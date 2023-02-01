@@ -87,6 +87,7 @@ form.addEventListener("submit", (e) => {
     submit();
     data.style.pointerEvents="auto";
     btn.disabled=true;
+    document.getElementById('goto').innerHTML="Successfully Registered, go to Data."
 })
 
 
