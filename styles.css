@@ -95,15 +95,20 @@ h2{
 ul{
     list-style:none;
     display:grid;
-    grid-template-columns:1fr 1fr; /* two col */
+    grid-template-columns:5fr 5fr; /* two col */
     justify-content:center;
     width:25vw;
+    align-items: center;
   
   }
   ul li{
     padding:1em 2em .8em 2em;
     border:1px solid black;
+    justify-content: center;
   
+  }
+  #lists{
+    justify-content: center;
   }
   .dice-game{
     justify-content: center;

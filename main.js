@@ -155,11 +155,11 @@ function myfunction(){
     }else if(count == 3 && sum < 10){
         prompt("Try again after scoring greater than 10.");
         dicegame.style.pointerEvents="auto"; 
-
+        clear();
     }
     else
     {
-        count++;
+        ++count;
         let  arr= ["1", "2", "3", "4", "5", "6"];
         let randomIndex = Math.floor(Math.random()*6);
         console.log(randomIndex);
@@ -178,6 +178,12 @@ let result = ''
 let length = 12 // Customize the length here.
 for (let i = length; i > 0; --i) result += characters[Math.round(Math.random() * (characters.length - 1))]
 alert("Your Coupon is - " +result);
+}
+
+function clear(){
+    document.getElementById("dice-score-para").innerHTML="";
+    document.getElementById("dice-count-para").innerHTML="";
+    document.getElementById("dice-total-para").innerHTML="";
 }
 
 
