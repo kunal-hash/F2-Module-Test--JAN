@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-fluid section-1">
+            <div class="item" id="logo-1">
+                <div class="g-col-3"><a href=""><img src="signupp.png" id="image-1" alt="signupform"></a></div>
+                <div class="text"><b>Sign up</b></div>
+            </div>
+            <div class="item" id="logo-2">
+                <div class="g-col-3"><a href=""><img src="registered.png" id="image-2" alt="registeddata"></a></div>
+                <div class="text"><b>Data</b></div>
+            </div>
+            <div class="item" id="logo-3">
+                <div class="g-col-3"><a href=""><img src="play.png" id="image-3" alt="diceimage"></a></div>
+                <div class="text"><b>Dice game</b></div>
+            </div>
+            <div class="item" id="logo-4">
+                <div class="g-col-3"><a href=""><img src="generate.png" id="image-4" alt="generatecoupen"></a></div>
+                <div class="text"><b>Generate coupon</b></div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        <div class="section-2">
+            <div class="form-div hide section-2-items" id="my-form-div">
+                <h1 class>Register</h1>
+                <form action="#" id="my-form" method="get">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block mb-4" id="button">submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="database hide section-2-items" id="database-div">
+                <h1>Registered user</h1>
+                <div class="form-group">
+                    <ul id="data">
+                        <li>Name</li>
+                        <li>Username</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dicegame hide section-2-items" id="dicegame-div">
+                <h1>Click dice image to roll the dice</h1>
+                <div class="clicktoplay">
+                    <div class="abc border" id="my-dice" ><a href="#"><img src="diceimage.png" alt="dice-image" id="dice-image"></a>
+                    </div>
+                    <div class="score border">
+                        <h1>Score</h1>
+                        <p><span id="dice-score-para">0</span></p>
+                        <h1>Count</h1>
+                        <p><span id="dice-count-para">0</span></p>
+                        <h1>Total</h1>
+                        <p><span id="dice-total-para">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="generate-coupon hide  section-2-items" id="generate-coupon-div">
+                <h1>Congratulations Coupon Generated !!!</h1>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

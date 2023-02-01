@@ -1,0 +1,113 @@
+
+.main-container{
+    height: 90%;
+    /*background-color: #82CD47;*/
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    background-color: #F0FF42;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    text-align: center;
+    font-weight: 600px;
+    font-size: 20px;
+}
+.g-col-3{
+    width: 25%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.section-1 img{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+#logo-2{
+    pointer-events: none;
+}
+#logo-3{
+    pointer-events: none;
+}
+#logo-4{
+    pointer-events: none;
+}
+.text{
+    height: auto;
+    width: auto;
+}
+.section-2{
+    /* background-color: #82CD47; */
+    height: 82.5vh;
+}
+.hide{
+    display: none;
+}
+
+.section-2-items{
+    width: 60%;
+    padding: 10px;
+    margin:auto;
+    border: 1px solid red;
+    height: auto;
+
+}
+h1{
+    text-align: center;
+    background-color:#379237
+}
+.form-group{
+    width: auto;
+    padding: 30px;
+    background-color:#82CD47;
+}
+.form-control{
+    width: 100%;
+    height: 40px;
+}
+ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr; /* two col */
+    justify-content:center;
+    width:25vw;
+  
+  }
+  ul li{
+    padding:1em 2em .8em 2em;
+    border:1px solid black;
+  
+  }
+  .dice-game{
+    justify-content: center;
+  }
+  #dice-image{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+  }
+  .clicktoplay{
+    display: flex;
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+  }
+  .border{
+    border: 1px solid black;
+  }
+  .score{
+    text-align: center;
+    width: 100%;
+  }
+  
